@@ -1,7 +1,7 @@
-def is_ok(x):
+def is_ok(mid):
     ls = []
     for i in range(N):
-        ls.append((x-H[i])//S[i])  # いつまでに割れば良いか
+        ls.append((mid-H[i])//S[i])  # いつまでに割れば良いか
     ls.sort()  # 期限が近いものから先にわる
     print(ls)
     for n in range(N):
